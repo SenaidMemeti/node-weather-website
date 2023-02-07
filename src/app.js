@@ -49,7 +49,7 @@ app.get('/about', (req, res) =>{
 })
 
 app.get('/help', (req, res) =>{
-    res.render('/help',{
+    res.render('help',{
         title: 'Help',
         helpText:'Senaid Memeti aide est là',
         name: 'Senaid Memeti'
