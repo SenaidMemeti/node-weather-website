@@ -48,8 +48,8 @@ app.get('/about', (req, res) =>{
     })
 })
 
-app.get('src/templates/views/help', (req, res) =>{
-    res.render('src/templates/views/help',{
+app.get('/help', (req, res) =>{
+    res.render('/help',{
         title: 'Help',
         helpText:'Senaid Memeti aide est là',
         name: 'Senaid Memeti'
