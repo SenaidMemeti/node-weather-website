@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast')
 
 console.log(__dirname)
 console.log(path.join(__dirname, '../public'))
+const PORT = process.env.PORT || 5050;
 
 
 const app = express()
@@ -21,6 +22,7 @@ hbs.registerPartials(partialsPath)
 
 //Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
+app.listen(PORT, () => console.log('Server is running on port ${PORT}'));
 
 /*app.get('/help', (req, res) =>{
     res.send([{
