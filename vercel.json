@@ -1,9 +1,8 @@
 {
-    "ckeanUrls": true,
     "version": 2,
     "builds":[
         {
-            "src": "./*",
+            "src": "./src/*.js",
             "use": "@vercel/node"
         }
     ],
